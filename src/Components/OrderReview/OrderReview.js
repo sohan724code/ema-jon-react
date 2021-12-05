@@ -17,9 +17,9 @@ const OrderReview = () => {
   };
 
   const handelClick = () => {
-    history.push("/successfull");
-    setCart([]);
-    clearTheCart();
+    history.push("/shipping");
+    // setCart([]);
+    // clearTheCart();
   };
 
   return (
@@ -36,7 +36,7 @@ const OrderReview = () => {
       <div className="cart-section">
         <Cart cart={cart}>
           <button className="btn-regular" onClick={handelClick}>
-            place order
+            Procced to shipping
           </button>
         </Cart>
       </div>
